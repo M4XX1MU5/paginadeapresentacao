@@ -1,0 +1,80 @@
+body {
+    background-image: url(imagens/1000294914.jpg);
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área da página */
+    background-color: transparent; /* Garante que a cor de fundo seja transparente para mostrar a imagem */
+    background-color: rgba(146, 88, 205, 0.789); /* Cor de fundo com opacidade para criar um efeito de sobreposição */
+    background-blend-mode: overlay;       /* mistura a cor com a imagem */
+}
+
+h1 {
+    display: flex;
+    justify-content: center; /* Distribui o texto e a imagem nas extremidades */
+    background-color: palevioletred;
+    padding: 10px 20px;
+    align-items: center;
+    font-size: 50px;
+}
+
+h1 span {
+    margin-left: 20px;   /* margem só no texto */
+    display: inline-block; /* garante que a margem funcione corretamente */
+}
+
+h2 {
+    font-size: 40px;
+}
+
+
+main section {
+    display: flex;          /* Ativa o flexbox / coloca os elementos filhos (img e div) em linha. */
+    align-items: center;    /* Alinha verticalmente */
+    gap: 20px;              /* Espaço entre a imagem e o texto */
+}
+
+main img {
+    max-width: 300px;       /* Ajusta o tamanho da imagem */
+    height: auto;
+    border-radius: 10px;  
+}
+
+/* Produto 1 e 3: imagem à esquerda, texto à direita */
+.produto1, .produto2, .produto3 {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+/* Produto 2: texto à esquerda, imagem à direita */
+
+/* .produto2 {
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center;
+    gap: 20px; 
+} */
+
+.produto1, .produto2, .produto3 {
+    border: 5px solid palevioletred; /* Adiciona uma borda para destacar o produto */
+    padding: 10px; /* Adiciona um pouco de espaço interno */
+    margin: 20px; /* Adiciona um pouco de espaço externo */
+    border-radius: 10px;  
+}
+
+img {
+    border: 5px solid palevioletred; /* borda ao redor da imagem */
+}
+
+footer {
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid #fff;
+}
+
+footer .social img {
+    width: 30px;
+    margin: 0 10px;
+}
+
